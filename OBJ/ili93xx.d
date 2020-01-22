@@ -1,0 +1,13 @@
+..\obj\ili93xx.o: ..\HARDWARE\LCD\ILI93xx.c
+..\obj\ili93xx.o: ..\HARDWARE\LCD\lcd.h
+..\obj\ili93xx.o: ..\SYSTEM\sys\sys.h
+..\obj\ili93xx.o: ..\USER\stm32f10x.h
+..\obj\ili93xx.o: ..\USER\core_cm3.h
+..\obj\ili93xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ili93xx.o: ..\USER\system_stm32f10x.h
+..\obj\ili93xx.o: ..\USER\stm32f10x_conf.h
+..\obj\ili93xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\ili93xx.o: ..\HARDWARE\LCD\font.h
+..\obj\ili93xx.o: ..\SYSTEM\usart\usart.h
+..\obj\ili93xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\ili93xx.o: ..\SYSTEM\delay\delay.h
