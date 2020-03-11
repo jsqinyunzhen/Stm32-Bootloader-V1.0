@@ -4,8 +4,8 @@
 #include "led.h"   	 
 #include "stmflash.h"	
 #include "iap.h"	 
-
-
+#include "crc.h"
+#include "string.h"
 uint32_t sys_ms_cnt;
 
 
@@ -46,6 +46,7 @@ void RS485_SendString(u8 * pstr,u8 len)
     PAout(11) = 0;
     PAout(12) = 0;
 }
+//u8 buf []={0xff,0xff,0xff,0xff,0xff,0xff};
 int main(void)
 {		 
 	u8 t;
@@ -59,7 +60,7 @@ int main(void)
 	LED_Init();		  		//初始化与LED连接的硬件接口
 	//LCD_Init();			   	//初始化LCD
  	//KEY_Init();				//按键初始化
-
+//	RS485_SendString(buf,sizeof(buf));
 	while(1)
 	{
 	 	if(key == REC_BIN)
@@ -102,17 +103,39 @@ int main(void)
 			{
 				//printf("开始更新固件...\r\n");	
 				//LCD_ShowString(60,210,200,16,16,"Copying APP2FLASH...");
+				#if 0
+				if(crc16(0xFFFF,USART_RX_BUF,applenth) == 0)
+				{
+					u16 crc = 0;
+					crc = crc16(0xFFFF,USART_RX_BUF,applenth-2);
+					crc = crc;
+				}
+                #endif
  				if(((*(vu32*)(0X20001000+4))&0xFF000000)==0x08000000)//判断是否为0X08XXXXXX.
 				{	 
-                    u8 successss[] = "update success!!!!\r\n";
-					iap_write_appbin(FLASH_APP1_ADDR,USART_RX_BUF,applenth);//更新FLASH代码   
+					if(crc16(0xFFFF,USART_RX_BUF,applenth) == 0)
+					{
+                        u8 successss[] = "update bin success!\r\n";
+                        iap_write_appbin(FLASH_APP1_ADDR,USART_RX_BUF,applenth -2);//更新FLASH代码  
+                        RS485_SendString(successss,sizeof(successss)-1);
+                        
+                        key = UPDATE_SUCCESS;
+					}
+					else
+					{
+                        u8 successss[] = "update CRC FAILED!!!!\r\n";
+                        RS485_SendString(successss,sizeof(successss)-1);
+                        key = WAIT_UPDATE;
+					}
 					//LCD_ShowString(60,210,200,16,16,"Copy APP Successed!!");
 					//printf("固件更新完成!\r\n");	
 					
-                    RS485_SendString(successss,sizeof(successss)-1);
-					key = UPDATE_SUCCESS;
-				}else 
+				}
+				else 
 				{
+					u8 successss[] = "bin file error!!!!\r\n";
+					RS485_SendString(successss,sizeof(successss)-1);
+					key = WAIT_UPDATE;
 					//LCD_ShowString(60,210,200,16,16,"Illegal FLASH APP!  ");	   
 					//printf("非FLASH应用程序!\r\n");
 				}
@@ -128,7 +151,7 @@ int main(void)
             if(USART_RX_CNT > 15)
 		    {
                 u32 i = 0;
-                u8 wait1ssend[] = "Send after wait 1S\r\n";
+                u8 wait1ssend[] = "wait 1 Second\r\n";
                 u8 upFlag[] = "\r\nupdate\r\n";
                 
                 for(i = 0; i < USART_RX_CNT-sizeof(upFlag)+1; i++)
@@ -152,10 +175,11 @@ int main(void)
         {
             if(USART_RX_CNT > 0)
             {
-                clearflag = 0;
+                clearflag = 0;         
+							
                 USART_RX_CNT = 0;
             }
-            if(clearflag > 200)
+            if(clearflag > 100)
             {
                 key = REC_BIN;
                 USART_RX_CNT = 0;
@@ -165,12 +189,24 @@ int main(void)
 		if(clearflag > 200 || key == UPDATE_SUCCESS) //2s 
 		{
 			//printf("开始执行FLASH用户代码!!\r\n");
+
 			if(((*(vu32*)(FLASH_APP1_ADDR+4))&0xFF000000)==0x08000000)//判断是否为0X08XXXXXX.
 			{	 
+				if(key == UPDATE_SUCCESS)
+				{
+					RS485_SendString("run new code\r\n",strlen("run new code\r\n"));
+				}
+				else
+				{
+					RS485_SendString("run old code\r\n",strlen("run old code\r\n"));
+				}
 				iap_load_app(FLASH_APP1_ADDR);//执行FLASH APP代码
-			}else 
+			}
+			else 
 			{
 				//printf("非FLASH应用程序,无法执行!\r\n");
+				RS485_SendString("user code failed\r\n",strlen("user code failed\r\n"));
+                key = WAIT_UPDATE;
 				//LCD_ShowString(60,210,200,16,16,"Illegal FLASH APP!");	   
 			}									 
  
