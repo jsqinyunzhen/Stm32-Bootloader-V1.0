@@ -1,80 +1,0 @@
-Dependencies for Project 'TEST', Target 'Target 1': (DO NOT MODIFY !)
-F (.\startup_stm32f10x_md.s)(0x5E2508C3)(--cpu Cortex-M3 -g --apcs=interwork -I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 518" --pd "STM32F10X_MD SETA 1"--list ..\obj\startup_stm32f10x_md.lst --xref -o ..\obj\startup_stm32f10x_md.o --depend ..\obj\startup_stm32f10x_md.d)
-F (.\test.c)(0x5E27A8E3)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\test.o --omf_browse ..\obj\test.crf --depend ..\obj\test.d)
-I (..\SYSTEM\sys\sys.h)(0x5E26695A)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\USER\core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x5E2509D6)
-I (..\SYSTEM\usart\usart.h)(0x5E266C9F)
-I (..\SYSTEM\delay\delay.h)(0x5E266F4D)
-I (..\HARDWARE\LED\led.h)(0x5317183E)
-I (..\HARDWARE\STMFLASH\stmflash.h)(0x5E26656A)
-I (..\IAP\iap.h)(0x5323D521)
-F (.\stm32f10x_it.c)(0x5E26A3E2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
-I (stm32f10x_it.h)(0x4D99A59E)
-I (stm32f10x.h)(0x4D783CB4)
-I (core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (system_stm32f10x.h)(0x4D783CAA)
-I (stm32f10x_conf.h)(0x5E2509D6)
-F (.\system_stm32f10x.c)(0x5D762D47)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\system_stm32f10x.o --omf_browse ..\obj\system_stm32f10x.crf --depend ..\obj\system_stm32f10x.d)
-I (stm32f10x.h)(0x4D783CB4)
-I (core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (system_stm32f10x.h)(0x4D783CAA)
-I (stm32f10x_conf.h)(0x5E2509D6)
-F (..\SYSTEM\delay\delay.c)(0x555AC5E1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
-I (..\SYSTEM\delay\delay.h)(0x5E266F4D)
-I (..\SYSTEM\sys\sys.h)(0x5E26695A)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\USER\core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x5E2509D6)
-F (..\SYSTEM\sys\sys.c)(0x5E26688C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
-I (..\SYSTEM\sys\sys.h)(0x5E26695A)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\USER\core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x5E2509D6)
-F (..\SYSTEM\usart\usart.c)(0x5E266C2C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
-I (..\SYSTEM\usart\usart.h)(0x5E266C9F)
-I (..\SYSTEM\sys\sys.h)(0x5E26695A)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\USER\core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x5E2509D6)
-F (..\HARDWARE\LED\led.c)(0x5E2675E4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
-I (..\SYSTEM\sys\sys.h)(0x5E26695A)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\USER\core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x5E2509D6)
-I (..\HARDWARE\LED\led.h)(0x5317183E)
-F (..\HARDWARE\STMFLASH\stmflash.c)(0x5E2667ED)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stmflash.o --omf_browse ..\obj\stmflash.crf --depend ..\obj\stmflash.d)
-I (..\HARDWARE\STMFLASH\stmflash.h)(0x5E26656A)
-I (..\SYSTEM\sys\sys.h)(0x5E26695A)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\USER\core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x5E2509D6)
-I (..\SYSTEM\delay\delay.h)(0x5E266F4D)
-I (..\SYSTEM\usart\usart.h)(0x5E266C9F)
-F (..\IAP\iap.c)(0x5E266591)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USMART -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\EXTI -I ..\HARDWARE\WDG -I ..\HARDWARE\TIMER -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\HARDWARE\RTC -I ..\HARDWARE\WKUP -I ..\HARDWARE\ADC -I ..\HARDWARE\DAC -I ..\HARDWARE\DMA -I ..\HARDWARE\24CXX -I ..\HARDWARE\FLASH -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\HARDWARE\NRF24L01 -I ..\HARDWARE\REMOTE -I ..\HARDWARE\DS18B20 -I ..\HARDWARE\PS2 -I ..\HARDWARE\STMFLASH -I ..\IAP-I "E:\¬‹≤∑≥‰µÁπÒ\œ‘ æ∆¡\IAP Bootloader V1.0\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\iap.o --omf_browse ..\obj\iap.crf --depend ..\obj\iap.d)
-I (..\SYSTEM\sys\sys.h)(0x5E26695A)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\USER\core_cm3.h)(0x4D523B58)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DEA3A)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x5E2509D6)
-I (..\SYSTEM\delay\delay.h)(0x5E266F4D)
-I (..\SYSTEM\usart\usart.h)(0x5E266C9F)
-I (..\HARDWARE\STMFLASH\stmflash.h)(0x5E26656A)
-I (..\IAP\iap.h)(0x5323D521)
-F (..\README.TXT)(0x55CAD566)()
